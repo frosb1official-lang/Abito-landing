@@ -1,6 +1,8 @@
 import { Header } from "../components/header/header"
 import { Card } from "../components/Card/Card"
 import { cardArray } from "../constants"
+import { Side } from "../components/Side/Side"
+import { sideArray } from "../constants"
 
 export const Home = () => {
     return (
@@ -46,25 +48,17 @@ export const Home = () => {
                             <div className="content-side">
                                 <h3 className="content-side__title">Сервисы и услуги</h3>
 
-                                <div className="content-side__box">
-                                    <div className="content-side__list">
-                                        <div className="content-side__list-item">
-                                            <img src="/images/info1.svg" alt="info1" className="content-side__list-item--img" />
-                                            <h5 className="content-side__list-item--title">Доставка</h5>
-                                            <p className="content-side__list-item--text">Проверка при получении и возможность бесплатно вернуть товар</p>
-                                        </div>
-                                        <div className="content-side__list-item">
-                                            <img src="/images/info2.svg" alt="info2" className="content-side__list-item--img" />
-                                            <h5 className="content-side__list-item--title">Автотека</h5>
-                                            <p className="content-side__list-item--text">Отчёт с историей авто: пробег, владельцы, сведения о залоге, ДТП и ремонтах</p>
-                                        </div>
-                                        <div className="content-side__list-item">
-                                            <img src="/images/info3.svg" alt="info3" className="content-side__list-item--img" />
-                                            <h5 className="content-side__list-item--title">Онлайн-бронирование жилья</h5>
-                                            <p className="content-side__list-item--text">Посуточная аренда квартир и домов: большой выбор вариантов для поездок по России</p>
-                                        </div>
-                                    </div>
+                                    {
+                                        sideArray.map(side => (
+                                            <Side 
+                                                key={side.id}
+                                                img={side.img}
+                                                title={side.title}
+                                                text={side.text}
+                                            />
 
+                                        ))    
+                                    }
                                     <hr>
                                     </hr>
 
@@ -84,7 +78,6 @@ export const Home = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </section>
             </main>
         </>

@@ -4,6 +4,8 @@ import './index.css';
 import { Home } from './pages/Home'
 import { Product } from './pages/Product'
 import { Layout } from './layouts/Layout';
+import Error404 from './pages/Error404';
+
 
 import {
   createBrowserRouter,
@@ -22,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/product/:id",
         element: <Product />,
+      },
+      {
+        path: "*",
+        element: <Error404 />,
       },
     ]
   },

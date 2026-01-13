@@ -6,7 +6,8 @@ export const cardArray = [
         address: 'Казань, р-н Вахитовский',
         date: '10 июля 11:39',
         img: '/images/card-img.png',
-        description: 'Продаю не спеша самокат в хорошем состоянии.'
+        description: 'Продаю не спеша самокат в хорошем состоянии.',
+        phone: '+7-777-777-77-77'
     },
     {
         id: 1,
@@ -15,7 +16,8 @@ export const cardArray = [
         address: 'Казань, р-н Вахитовский',
         date: '10 июля 11:39',
         img: '/images/card-img.png',
-        description: 'Продаю не спеша самокат в хорошем состоянии.'
+        description: 'Продаю не спеша самокат в хорошем состоянии.',
+        phone: '+7-777-777-77-77'
     },
     {
         id: 2,
@@ -24,7 +26,8 @@ export const cardArray = [
         address: 'Казань, р-н Вахитовский',
         date: '10 июля 11:39',
         img: '/images/card-img.png',
-        description: 'Продаю не спеша самокат в хорошем состоянии.'
+        description: 'Продаю не спеша самокат в хорошем состоянии.',
+        phone: '+7-777-777-77-77'
     },
     {
         id: 3,
@@ -33,7 +36,8 @@ export const cardArray = [
         address: 'Казань, р-н Вахитовский',
         date: '10 июля 11:39',
         img: '/images/card-img.png',
-        description: 'Продаю не спеша самокат в хорошем состоянии.'
+        description: 'Продаю не спеша самокат в хорошем состоянии.',
+        phone: '+7-777-777-77-77'
     },
     {
         id: 4,
@@ -42,7 +46,8 @@ export const cardArray = [
         address: 'Казань, р-н Вахитовский',
         date: '10 июля 11:39',
         img: '/images/card-img.png',
-        description: 'Продаю не спеша самокат в хорошем состоянии.'
+        description: 'Продаю не спеша самокат в хорошем состоянии.',
+        phone: '+7-777-777-77-77'
     },
     {
         id: 5,
@@ -51,7 +56,8 @@ export const cardArray = [
         address: 'Казань, р-н Вахитовский',
         date: '10 июля 11:39',
         img: '/images/card-img.png',
-        description: 'Продаю не спеша самокат в хорошем состоянии.'
+        description: 'Продаю не спеша самокат в хорошем состоянии.',
+        phone: '+7-777-777-77-77'
     }
 ]
 

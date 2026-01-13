@@ -1,3 +1,5 @@
+import './Error404.css'
+
 function Error404() {
   return (
     <div style={{ textAlign: 'center', padding: '100px 20px' }}>

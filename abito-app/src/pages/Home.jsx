@@ -9,26 +9,33 @@ export const Home = () => {
     return (
         <section className="content">
             <div className="container">
-                <div className="content-box">
-                    <div className="content-main">
-
-                        <h2 className="content-main__title">Рекомендации для вас</h2>
-                        <div className="content-main__list">
-                            {
-                                products.map(card => (
-                                    <Card 
-                                        key={card.id}
-                                        id={card.id}
-                                        title={card.title}
-                                        price={card.price}
-                                        address={card.address}
-                                        date={card.date}
-                                        img={card.img}
-                                    />
-                                ))
-                            }
+                <div className="content-box">                        
+                        {products.length > 0 ? (
+                        <div className="content-main">
+                            <h2 className="content-main__title">Рекомендации для вас</h2>
+                            <div className="content-main__list">
+                                {
+                                    products.map(card => (
+                                        <Card 
+                                            key={card.id}
+                                            id={card.id}
+                                            title={card.title}
+                                            price={card.price}
+                                            address={card.address}
+                                            date={card.date}
+                                            img={card.img}
+                                        />
+                                    ))
+                                }
+                            </div>
                         </div>
-                    </div>
+                        ):
+                        (
+                        <div className="content-main">
+                            <h2 className="content-main__title">Ничего не найдено</h2>
+                        </div>
+                        )}
+
                     <div className="content-side">
                         <h3 className="content-side__title">Сервисы и услуги</h3>
 

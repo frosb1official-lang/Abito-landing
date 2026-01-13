@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom'
 import './Header.css'
 
-export const Header = () => {
+export const Header = ( {onLogoClick} ) => {
     return (
         <header className="header">
             <div className="container">
                 <div className="header-box">
                     <Link to={'/'} className="header-logo">
                         <img src="/images/Logo.svg" alt="logo" />
-                        <span>Abito</span>
+                        <span onClick={onLogoClick}>Abito</span>
                     </Link>
                     <div className="header-controls">
                         <button className="btn btn-outline">Вход и регистрация</button>

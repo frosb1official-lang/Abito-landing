@@ -8,7 +8,6 @@ export const Product = () => {
     return (
         <section className="content">
             <div className="container">
-                {findProduct ? 
                 <div className="content-box">
                     <div className="content-product">
                         <div className="content-product__left">
@@ -66,8 +65,6 @@ export const Product = () => {
                         </div>
                     </div>
                 </div>
-                :
-                <h2>Такого товара не существует!</h2>}
             </div>
         </section>
     )
